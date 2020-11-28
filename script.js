@@ -69,7 +69,7 @@ function bgcolor(){
 }
 
 function yes() {
-  if(i < 2){
+  if(i < 72){
     results = results + "<br/><br/>" + questions[i];
     bgcolor();
   } else {

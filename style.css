@@ -1,9 +1,27 @@
-p {
-  font-family: verdana;
-  font-size: 20px;
-  font-color: #ffff00;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200&display=swap');
+
+html{
+  width: 100%;
+  height: 100%;
+  font-family: 'Noto Serif KR', serif;
 }
 
-body {
-  background-color: #11117f;
+body{
+  width: 350px;
+}
+
+.main {
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+}
+
+.content {
+  margin-top: 20%;
+}
+
+#intro_string{
+  text-align: center;
+  margin-top: 20%;
+  line-height: 1.5;
 }

@@ -5,18 +5,45 @@
 <link rel="stylesheet" href="style.css">
 <title>기구와 장비</title>
 </head>
-<body class="main" id="background">
+<body id="body">
+
   <div class="content">
-    <div class="intro" id="0">
-      <h5>기구와 장비</h5>
-      <p id="intro_string"></p>
-      <!--button id="main_btn" onClick="bgclr()"-->
-      <div class="btn">
-        <button id="yes" onClick="yes()">yes</button>
-        <button id="no" onClick="no()">no</button>
-      </div>
+  <!--인트로 화면-->
+  <div id="intro">
+    <p id="ttl" style="padding-bottom: 30px;">가톨릭 양심성찰</p>
+    <p id="intro_string"></p>
+    <button class="button" id="intro_btn" onclick="start()">시작하기</button>
+  </div>
+
+  <!--성호경 입력 인증-->
+  <div id="sungho">
+    <p>성호경을 입력하세요.</p>
+    <input id="sungho_pray" style="width: 60%; height: 30px; font-size:1em; margin-bottom: 30px; " ></input><br/>
+    <button class="button" id="sungho_btn" onclick="amen()">아멘</button>
+  </div>
+
+  <!--시작 기도-->
+  <div id="pray" style="margin-top: 40px;">
+    <p id="pray_string"></p><br/>
+    <button class="button" id="next_btn" onclick="next()">다음으로</button>
+  </div>
+
+  <!--성찰 질문-->
+  <div id="question" style="padding-top: 3em; margin-top: 2em;">
+    <p id="question_string"></p>
+    <div class="YesOrNo">
+      <button class="button" id="yes" onclick="yes()">그렇습니다.</button><br/>
+      <button class="button"id="no" onclick="no()">그렇지 않습니다.</button>
     </div>
   </div>
+
+  <!--결과 내용-->
+  <div id="result">
+    <p>수고하셨습니다.<br />아래의 내용을 복사하여<br/>고해성사에 참고하세요.</p>
+    <p id="result_string"></p>
+  </div>
+
+</div>
   <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

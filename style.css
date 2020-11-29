@@ -49,7 +49,9 @@ body {
 }
 
 #question_string {
-  height: 150px;
+  height: 250px;
+  margin: 0 0;
+  font-size: 1.4em;
 }
 
 #result_string {

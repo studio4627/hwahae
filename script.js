@@ -69,7 +69,7 @@ function bgcolor(){
 }
 
 function yes() {
-  if(i < 72){
+  if(i < 10){
     results = results + "<br/><br/>" + questions[i];
     bgcolor();
   } else {
@@ -89,7 +89,7 @@ function show_result() {
   document.getElementById("result_string").innerHTML = results;
   document.getElementById("question").style.display = 'none';
   document.getElementById("result").style.display = '';
-  bg.style.background = "rgba(70,0,90,1)";
+  bg.style.background = "linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(70,0,90,1) 100%)";
   document.getElementById("body").style.height="auto;"
   bt.style.height = "100%;"
 }

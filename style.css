@@ -33,7 +33,7 @@ body {
   line-height: 3vh;
 }
 
-.button {
+button {
   width: 40vh;
   height: auto;
   padding: 10px;

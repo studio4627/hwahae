@@ -7,7 +7,7 @@ html {
   height: 100%;
   font-family: 'Noto Sans KR', sans-serif;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 3vh;
   text-shadow: 1px 1px 1px gray;
 }
 
@@ -21,16 +21,16 @@ body {
 
 #ttl {
   font-family: 'Sunflower', sans-serif;
-  font-size: 4vh;
+  font-size: 2vh;
 }
 
 #sungho {
-  margin: 30% auto;
+  margin: 10px auto;
 }
 
 #pray_string {
-  font-size: 4vh;
-  line-height: 4vh;
+  font-size: 3vh;
+  line-height: 3vh;
 }
 
 .button {
@@ -42,7 +42,7 @@ body {
   border-style: none;
   border-radius: 0.3em;
   color: #ffffff;
-  font-size: 4vh;
+  font-size: 2vh;
 }
 
 #next_btn {
@@ -57,11 +57,11 @@ body {
 #question_string {
   height: 250px;
   margin: 0 0;
-  font-size: 1.4vh;
+  font-size: 2vh;
 }
 
 #result_string {
-  font-size: 4vh;
+  font-size: 2vh;
   height: 100%;
   padding-top: 20px;
   padding-bottom: 40px;

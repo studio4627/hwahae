@@ -34,10 +34,10 @@ body {
 }
 
 .button {
-  width: 40%;
+  width: 20vh;
   height: auto;
   padding: 10px;
-  margin-top: 1vh;
+  margin-top: 3vh;
   background-color: #00000033;
   border-style: none;
   border-radius: 0.3em;
@@ -54,7 +54,7 @@ body {
 #question_string {
   height: 350px;
   margin: 0 0;
-  font-size: 3vh;
+  font-size: 2.7vh;
 }
 
 #result_string {

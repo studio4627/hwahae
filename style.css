@@ -13,7 +13,8 @@ html {
 
 body {
   max-width: 550px;
-  height: 100%;
+  width: 100%;
+  height: auto;
   margin: 0 auto;
   line-height: 5vh;
   text-align: center;

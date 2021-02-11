@@ -12,9 +12,8 @@ html {
 }
 
 body {
-  max-width: 550px;
   width: 100%;
-  height: auto;
+  height: 100%;
   margin: 0 auto;
   line-height: 5vh;
   text-align: center;

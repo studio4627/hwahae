@@ -8,10 +8,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
   width: 100%;
   height: 100%;
-  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'RIDIBatang', sans-serif;
   color: #ffffff;
   font-size: 1em;
   text-shadow: 1px 1px 1px gray;

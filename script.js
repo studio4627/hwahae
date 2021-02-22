@@ -6,6 +6,7 @@ var questions = ["한 분이신 아버지이신 하느님께<br />찬미와 감�
 var results = "";
 var pass="";
 
+/*
 var left = 0;
 var r = 70;
 var g = 20;
@@ -15,6 +16,7 @@ var bg = document.getElementById("body");
 
 // 배경색 초기화
 bg.style.background = "linear-gradient(35deg, rgba(0,0,0,1) 0%, rgba(70,0,90,1) 100%)";
+*/
 
 // 배경색 변경
 function bgcolor(){

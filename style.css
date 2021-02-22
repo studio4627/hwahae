@@ -41,14 +41,14 @@ body {
 
 #sungho_pray {
   font-family: 'RIDIBatang', sans-serif;
-  height: 1.3em;
+  height: 1em;
   font-size: 1em;
   width: 60%;
   margin-bottom: 20px;
 }
 
 #pray_string {
-  font-size: 1.3em;
+  font-size: 1em;
 }
 
 button {

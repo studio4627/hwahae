@@ -34,6 +34,11 @@ function bgcolor(){
 }
 
 
+// 메뉴별 스트링 값 초기화
+document.getElementById("intro").innerHTML = intro_string;
+document.getElementById("pray_string").innerHTML = pray_string;
+document.getElementById("question_string").innerHTML = questions[i];
+
 // 인트로 메뉴만 남기고 다 숨기기
 document.getElementById("intro").style.display = '';
 document.getElementById("sungho").style.display = 'none';
@@ -41,10 +46,6 @@ document.getElementById("pray").style.display = 'none';
 document.getElementById("question").style.display = 'none';
 document.getElementById("result").style.display = 'none';
 
-// 메뉴별 스트링 값 초기화
-document.getElementById("intro").innerHTML = intro_string;
-document.getElementById("pray_string").innerHTML = pray_string;
-document.getElementById("question_string").innerHTML = questions[i];
 
 // 인트로에서 시작 버튼
 function start() {

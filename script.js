@@ -42,7 +42,7 @@ document.getElementById("question").style.display = 'none';
 document.getElementById("result").style.display = 'none';
 
 // 메뉴별 스트링 값 초기화
-document.getElementById("intro_string").innerHTML = intro_string;
+document.getElementById("intro").innerHTML = intro_string;
 document.getElementById("pray_string").innerHTML = pray_string;
 document.getElementById("question_string").innerHTML = questions[i];
 

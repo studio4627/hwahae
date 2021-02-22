@@ -50,6 +50,7 @@ document.getElementById("question_string").innerHTML = questions[i];
 function start() {
   document.getElementById("intro").style.display = 'none';
   document.getElementById("sungho").style.display = '';
+  document.getElementById("btn_notice").style.display = 'none';
 }
 
 // 성호경 인증
@@ -58,6 +59,7 @@ function amen() {
   sungho_pass = sungho_pass.replace(/(\s*)/g, "");
   if (sungho_pass.indexOf("성부와성자와성령의이름으로")==0){
     document.getElementById("sungho").style.display = 'none';
+    document.getElementById("sungho_btn").style.display = 'none';
     document.getElementById("pray").style.display = '';
   } else {
     alert("다시 입력하세요.");
@@ -67,6 +69,7 @@ function amen() {
 // 기도문에서 다음으로 버튼
 function next() {
   document.getElementById("pray").style.display = 'none';
+  document.getElementById("next_btn").style.display = 'none';
   document.getElementById("question").style.display = '';
   alert("주의\n이전 질문으로 돌아갈 수 없습니다.\n중간까지의 내용은 저장되지 않습니다.");
 }

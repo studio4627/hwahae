@@ -80,7 +80,7 @@ function next() {
 // 질문
 function question_change(){
   i+=1;
-  document.getElementById("question_string").innerHTML = questions[j];
+  document.getElementById("question_string").innerHTML = questions[i];
 }
 
 function yes() {

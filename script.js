@@ -54,6 +54,7 @@ function start() {
   document.getElementById("intro").style.display = 'none';
   document.getElementById("sungho").style.display = '';
   document.getElementById("btn_notice").style.display = 'none';
+  document.getElementById("contact").style.display='none';
 }
 
 // 성호경 인증

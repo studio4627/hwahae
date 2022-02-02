@@ -57,6 +57,7 @@ footer > a:visited {
 
 input {
 		width: 250px;
+		height: 2vh;
 }
 
 button {
@@ -78,6 +79,9 @@ button {
 }
 
 .YesOrNo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		align-items: center;
 }
 
@@ -89,11 +93,11 @@ button {
 }
 
 #question {
-		height: 70%;
+		height: 50vh;
 }
 
 #question_string {
-		height: 50%;
+		height: 50vh;
 }
 
 #result > p {

@@ -6,31 +6,31 @@ var questions = ["한 분이신 아버지이신 하느님께<br />찬미와 감�
 var results = "";
 var pass="";
 
-/*
 var left = 0;
 var r = 70;
 var g = 20;
 var b = 80;
 var text_color = 255;
-var bg = document.getElementById("body");
+var bg = document.getElementById("theme");
 
 // 배경색 초기화
 bg.style.background = "linear-gradient(35deg, rgba(0,0,0,1) 0%, rgba(70,0,90,1) 100%)";
-*/
 
+
+// 사순시기
 // 배경색 변경
 function bgcolor(){
-  // i+=1;
+  //i+=1;
   left += 3;
   r += 2;
   g += 2;
   b += 2;
 
   bg.style.background = "linear-gradient(35deg, rgba("+left+","+left+","+left+",1) 0%, rgba("+r+","+g+","+b+",1) 100%)";
-  //document.getElementById("yes").style.color="rgb("+ text_color +","+text_color+","+text_color+ ")";
-  //document.getElementById("no").style.color="rgb("+ text_color +","+text_color+","+text_color+ ")";
-  //document.getElementById("question_string").style.color="rgb("+ text_color +","+text_color+","+text_color+ ")";
-  // document.getElementById("question_string").innerHTML = questions[i];
+  document.getElementById("yes").style.color="rgb("+ text_color +","+text_color+","+text_color+ ")";
+  document.getElementById("no").style.color="rgb("+ text_color +","+text_color+","+text_color+ ")";
+  document.getElementById("question_string").style.color="rgb("+ text_color +","+text_color+","+text_color+ ")";
+  document.getElementById("question_string").innerHTML = questions[i];
   //bg.style.background = "linear-gradient(25deg, rgba(0,0,0,1) 0%, rgba(70,0,90,1) 100%)";
   //왼쪽 아래는 4씩, 오른쪽 위는 2씩 증가
 }
@@ -48,8 +48,7 @@ document.getElementById("pray").style.display = 'none';
 document.getElementById("question").style.display = 'none';
 document.getElementById("result").style.display = 'none';
 
-
-// 인트로에서 시작 버튼
+// 인트로에서 시작 버튼 누르면
 function start() {
   document.getElementById("intro").style.display = 'none';
   document.getElementById("sungho").style.display = '';
@@ -75,7 +74,7 @@ function next() {
   document.getElementById("pray").style.display = 'none';
   document.getElementById("next_btn").style.display = 'none';
   document.getElementById("question").style.display = '';
-  alert("주의\n이전 질문으로 돌아갈 수 없습니다.\n중간까지의 내용은 저장되지 않습니다.");
+  alert("※주의※\n이전 질문으로 돌아갈 수 없습니다.\n중간까지의 내용은 저장되지 않습니다.");
 }
 
 // 질문
@@ -88,6 +87,7 @@ function yes() {
   if(i < 72){
     results = results + "<br/><br/>" + questions[i];
     question_change();
+    bgcolor();
   } else {
     show_result();
   }
@@ -96,6 +96,7 @@ function yes() {
 function no() {
   if(i < 72) {
     question_change();
+    bgcolor();
   } else {
     show_result();
   }
@@ -111,7 +112,8 @@ function show_result() {
 }
 
 function result_copy() {
-  document.getElementById("result_string").select();
+  var res = document.getElementById("result_string");
+  res.select();
   document.execCommand("copy");
   alert('복사가 완료되었습니다.');
 }

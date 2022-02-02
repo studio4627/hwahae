@@ -9,22 +9,23 @@
   </head>
 
   <!-- body 시작-->
-  <body id="body" style="background-color:#4c1004;">
+  <body>
 
-    <div class="contents" id="content">
+    <div class="contents" id="theme">
+      <h1>가톨릭 양심성찰</h1>
+
       <!--인트로 화면-->
       <div id="main">
-        <p id="title">가톨릭 양심성찰</p>
         <p id="intro"></p>
         <button class="button" id="btn_notice" onclick="start()">시작하기</button>
-        <p id="contact" style="font-size: 0.7em;">instagram @ studio_4627</p>
+        <footer id="contact" style="font-size: 0.7em;"><a href="https://www.instagram.com/studio_4627/">instagram @ studio_4627</a></footer>
       </div>
 
       <!--성호경 입력 인증-->
       <div id="sungho">
         <p>성호경을 입력하세요.</p>
         <input id="sungho_pray" ></input><br/>
-        <button class="button" id="sungho_btn" style="margin-top: 1vh;" onclick="amen()">아멘</button>
+        <button class="button" id="sungho_btn" onclick="amen()">아멘</button>
       </div>
 
       <!--시작 기도-->
@@ -35,23 +36,24 @@
 
       <!--성찰 질문-->
       <div id="question">
-        <p id="question_string" style="padding-top: 3em; margin-top: 2em; padding-bottom: 1em;"></p>
+        <p id="question_string"></p>
         <div class="YesOrNo">
           <button class="button" id="yes" onclick="yes()">그렇습니다.</button><br/>
-          <button class="button"id="no" onclick="no()">그렇지 않습니다.</button>
+          <button class="button" id="no" onclick="no()">그렇지 않습니다.</button>
         </div>
       </div>
 
       <!--결과 내용-->
       <div id="result">
-        <p style="font-family: 'Sunflower', sans-serif; line-height: 1.5em; font-size: 1em;">수고하셨습니다.<br />아래의 내용을 복사하여<br/>고해성사에 참고하세요.</p>
-        <p id="result_string" style="overflow:auto; height:300px;"></p>
+        <p style="">수고하셨습니다.<br />아래의 내용을 복사하여<br/>고해성사에 참고하세요.</p>
+        <p id="result_string" style="overflow:auto; height:350px;"></p>
       </div>
 
-    <!-- body 끝-->
+    <!-- contents 끝 -->
     </div>
 
-    
+
     <script type="text/javascript" src="script.js"></script>
+    <!-- body 끝-->
   </body>
 </html>

@@ -57,6 +57,16 @@ function start() {
 }
 
 // 성호경 인증
+// 성호경 입력 후 엔터 처리
+var sungho_b = document.getElementById("sungho_pray");
+sungho_b.addEventListener("keypress", function(event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    document.getElementById("sungho_btn").click();
+  }
+});
+
+// amen 함수
 function amen() {
   var sungho_pass = document.getElementById("sungho_pray").value;
   sungho_pass = sungho_pass.replace(/(\s*)/g, "");
